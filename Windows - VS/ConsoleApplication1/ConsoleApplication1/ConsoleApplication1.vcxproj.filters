@@ -36,6 +36,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\Downloads\File1.test" />
+    <Text Include="Text.txt" />
   </ItemGroup>
 </Project>
