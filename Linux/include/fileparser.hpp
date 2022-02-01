@@ -11,7 +11,7 @@
 class TestFileParser { 
 public: 
     explicit TestFileParser() = delete;
-    explicit TestFileParser(const char* fileAdress) noexcept;
+    explicit TestFileParser(const std::string& fileAdress) noexcept;
     virtual ~TestFileParser(); 
  
     virtual void open();

@@ -28,7 +28,6 @@ namespace parser {
         return m_lines;
     }
     void FileParser::split(char t_delim) {
-        // std::vector<std::string> ret; m_lineOfString
         std::stringstream ss(m_lines);
         std::string item;
 
@@ -63,7 +62,7 @@ namespace parser {
             throw FileParserException{ "Error in parseWithSize()" };
 
     }
-    void FileParser::parseFile(std::string t_extensionName) {
+    void FileParser::parseFile(const std::string& t_extensionName) {
         if (isOpen() && m_lineOfString.size() > 0) {
             for (int i = 0; i < m_lineOfString.size(); i++) {
                 std::string iter = std::to_string(i);
